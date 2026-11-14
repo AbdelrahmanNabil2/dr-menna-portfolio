@@ -3,7 +3,7 @@
 
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/YOUR-REPOSITORY-NAME
+  repo: AbdelrahmanNabil2/dr-menna-portfolio
   branch: main
 
 # Where uploaded photos are saved (inside the repository) and how the website refers to them.
