@@ -1,0 +1,182 @@
+# Settings for the editing page at /admin.
+# SETUP: change the "repo" line below to your GitHub username and repository name, e.g. menna-dental/portfolio
+
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/YOUR-REPOSITORY-NAME
+  branch: main
+
+# Where uploaded photos are saved (inside the repository) and how the website refers to them.
+media_folder: assets/uploads
+public_folder: assets/uploads
+
+# Photos are shrunk automatically when uploaded (phone photos are large), so the website stays fast.
+media_libraries:
+  default:
+    config:
+      max_file_size: 25000000
+      transformations:
+        raster_image:
+          format: webp
+          quality: 85
+          width: 1800
+
+collections:
+  - name: website
+    label: Website
+    editor:
+      preview: false
+    files:
+      - name: content
+        label: All website content
+        file: content/site.json
+        format: json
+        fields:
+          - label: Search engines
+            name: seo
+            widget: object
+            collapsed: true
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Page title, name: title, widget: string, hint: "Shown in the browser tab and on Google." }
+              - { label: Page description, name: description, widget: text, hint: "One or two sentences shown under the title on Google." }
+
+          - { label: Name in the top bar, name: brand, widget: string }
+
+          - label: Top section
+            name: hero
+            widget: object
+            collapsed: true
+            summary: "{{fields.headline}} {{fields.highlight}}"
+            fields:
+              - { label: Small line above the headline, name: eyebrow, widget: string }
+              - { label: Headline, name: headline, widget: string, hint: "The first part of the big headline." }
+              - { label: Highlighted words, name: highlight, widget: string, hint: "These words appear in colour at the end of the headline." }
+              - { label: Introduction, name: lede, widget: text }
+              - { label: First button text, name: primary_button, widget: string }
+              - { label: Second button text, name: secondary_button, widget: string }
+              - label: Three quick facts
+                name: facts
+                widget: list
+                summary: "{{fields.strong}} {{fields.text}}"
+                fields:
+                  - { label: Bold words, name: strong, widget: string }
+                  - { label: Rest of the sentence, name: text, widget: string }
+
+          - label: About me
+            name: about
+            widget: object
+            collapsed: true
+            summary: "{{fields.heading}}"
+            fields:
+              - { label: Small heading, name: eyebrow, widget: string }
+              - { label: Full name, name: heading, widget: string }
+              - { label: Portrait photo, name: portrait, widget: image, required: false }
+              - { label: Portrait description (for screen readers), name: portrait_alt, widget: string, required: false }
+              - label: Paragraphs
+                name: paragraphs
+                widget: list
+                field: { label: Paragraph, name: paragraph, widget: text }
+              - label: Education, courses and certificates
+                name: details
+                widget: list
+                summary: "{{fields.label}}: {{fields.text}}"
+                hint: "Add a new line for every degree, course or certificate. Drag to reorder."
+                fields:
+                  - { label: Year or label, name: label, widget: string }
+                  - { label: Details, name: text, widget: string }
+
+          - label: Work experience
+            name: experience
+            widget: object
+            collapsed: true
+            summary: "{{fields.heading}}"
+            fields:
+              - { label: Small heading, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Short introduction, name: intro, widget: text, required: false }
+              - label: Roles and experience
+                name: items
+                widget: list
+                summary: "{{fields.title}} ({{fields.label}})"
+                hint: "Click Add to create a new role. Drag to change the order."
+                fields:
+                  - { label: Place or title, name: title, widget: string }
+                  - { label: What I did, name: description, widget: text }
+                  - { label: "Right side, bold line", name: label, widget: string, hint: "For example: 3 months" }
+                  - { label: "Right side, second line", name: sublabel, widget: string, required: false, hint: "For example: Tanta" }
+
+          - label: Case photos
+            name: photography
+            widget: object
+            collapsed: true
+            summary: "{{fields.heading}}"
+            fields:
+              - { label: Small heading, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Short introduction, name: intro, widget: text, required: false }
+              - { label: Text under the sample picture, name: placeholder_caption, widget: string, required: false, hint: "The sample smile picture is shown only while there are no photos and no cases. Once you add a photo or a case, it disappears." }
+              - label: Photo gallery
+                name: gallery
+                widget: list
+                required: false
+                summary: "{{fields.title}} ({{fields.case}})"
+                hint: "Photos of your work. Each one shows its title underneath and opens full-screen when tapped. Drag to change the order. IMPORTANT: add patient photos only with written consent and your supervisor's approval."
+                fields:
+                  - { label: Photo, name: image, widget: image, hint: "Portrait photos (4:5, like 1080x1350) look best." }
+                  - { label: Title shown under the photo, name: title, widget: string, hint: "For example: Try-in, Delivery, Impression" }
+                  - { label: Case name, name: case, widget: string, required: false, hint: "Type the SAME name for every photo of one case (for example: Complete denture). The filter buttons on the website are made from these names." }
+                  - { label: Description for screen readers, name: alt, widget: text, required: false, hint: "One sentence saying what the photo shows. Helps blind visitors and Google." }
+              - label: Before and after cases
+                name: cases
+                widget: list
+                required: false
+                summary: "{{fields.title}}"
+                hint: "IMPORTANT: add photos only with the patient's written consent and your supervisor's approval. Hide faces and any identifying details."
+                fields:
+                  - { label: Case title, name: title, widget: string }
+                  - { label: Before photo, name: before, widget: image }
+                  - { label: After photo, name: after, widget: image, hint: "Use the same angle and framing as the before photo." }
+                  - { label: Short description, name: description, widget: text, required: false }
+                  - { label: Details, name: details, widget: string, required: false, hint: "For example: Composite bonding, 3 visits" }
+
+          - label: Skills
+            name: skills
+            widget: object
+            collapsed: true
+            summary: "{{fields.heading}}"
+            fields:
+              - { label: Small heading, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - label: Groups
+                name: groups
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: Group name, name: title, widget: string }
+                  - label: Items
+                    name: items
+                    widget: list
+                    field: { label: Item, name: item, widget: string }
+
+          - label: Contact
+            name: contact
+            widget: object
+            collapsed: true
+            summary: "{{fields.heading}}"
+            fields:
+              - { label: Small heading, name: eyebrow, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Short introduction, name: intro, widget: text, required: false }
+              - { label: Email, name: email, widget: string, hint: "Messages from the contact form open in the visitor's email app addressed to this email." }
+              - { label: Phone, name: phone, widget: string, required: false, hint: "Leave empty to hide the phone number from the website." }
+              - { label: Location, name: location, widget: string, required: false }
+              - { label: Currently, name: current, widget: string, required: false }
+
+          - label: Footer
+            name: footer
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Left text, name: left, widget: string }
+              - { label: Right text, name: right, widget: string }

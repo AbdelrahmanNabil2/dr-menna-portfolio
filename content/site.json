@@ -1,0 +1,219 @@
+{
+  "seo": {
+    "title": "Dr. Menna Aboelata | General Dentist",
+    "description": "Portfolio of Dr. Menna Aboelata Salem, general dentist and dental intern at MSA University: education, clinical experience, dental photography and skills."
+  },
+  "brand": "Dr. Menna Aboelata",
+  "hero": {
+    "eyebrow": "General dentist · Dental intern",
+    "headline": "Dental graduate with",
+    "highlight": "real chairside experience.",
+    "lede": "I'm Dr. Menna Aboelata Salem, a general dentist completing my internship year at MSA University. I'm keen to keep building hands-on skills and to give patients high-quality care.",
+    "primary_button": "Get in touch",
+    "secondary_button": "See my case photography",
+    "facts": [
+      {
+        "strong": "Intern",
+        "text": "at MSA University"
+      },
+      {
+        "strong": "Dental surgery",
+        "text": "2021–2026, GPA 3.3"
+      },
+      {
+        "strong": "6 months",
+        "text": "in two dental clinics"
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "About",
+    "heading": "Menna Aboelata Salem",
+    "portrait": "assets/uploads/portrait.jpg",
+    "portrait_alt": "Portrait of Dr. Menna Aboelata",
+    "paragraphs": [
+      "I graduated in dental surgery from MSA University and am now completing my internship year. My clinical experience covers restorative dentistry, endodontics, periodontics, oral surgery, prosthodontics and pediatric dentistry.",
+      "I have also worked as a clinical observer and dental assistant in two clinics, where I documented cases with dental photography."
+    ],
+    "details": [
+      {
+        "label": "Now",
+        "text": "Dental internship year, MSA University"
+      },
+      {
+        "label": "2021–2026",
+        "text": "Bachelor of Dental Surgery, MSA University. GPA 3.3."
+      },
+      {
+        "label": "Languages",
+        "text": "Arabic and English"
+      }
+    ]
+  },
+  "experience": {
+    "eyebrow": "Work experience",
+    "heading": "Clinical experience so far",
+    "intro": "Two clinic roles in Tanta, plus experience in general anaesthesia cases.",
+    "items": [
+      {
+        "title": "Premium Dental Clinic",
+        "description": "Clinical observer and dental assistant with Dr. Mohamed El-Sawaf. Observed procedures and cases, assisted the dentist and kept the clinical workflow running, documented cases with intraoral and extraoral photographs, and prepared case posts for social media.",
+        "label": "3 months",
+        "sublabel": "Tanta"
+      },
+      {
+        "title": "Luxury Dental Clinic",
+        "description": "Clinical observer and dental assistant with Dr. Mostafa El-Masry. Helped with chairside preparation and procedures, built experience in patient communication and clinical team coordination, and saw patient assessment, diagnosis and treatment planning.",
+        "label": "3 months",
+        "sublabel": "Tanta"
+      },
+      {
+        "title": "General anaesthesia cases",
+        "description": "Assisted the dentist during comprehensive dental treatment under general anaesthesia, working as part of a dental team and building teamwork and communication skills.",
+        "label": "Assistant",
+        "sublabel": "Dental team"
+      }
+    ]
+  },
+  "photography": {
+    "eyebrow": "Dental photography",
+    "heading": "Selected work",
+    "intro": "Samples of my work, case by case, from impressions to delivery. Click or tap a photo to see it larger.",
+    "gallery": [
+      {
+        "image": "assets/uploads/work/denture-1-primary-secondary-impressions.jpg",
+        "title": "Primary and secondary impressions",
+        "case": "Complete denture",
+        "alt": "Four impressions of a lower edentulous ridge: primary impressions in pink, secondary impressions in blue and green."
+      },
+      {
+        "image": "assets/uploads/work/denture-2-bite-registration.jpg",
+        "title": "Bite registration",
+        "case": "Complete denture",
+        "alt": "Two plaster casts with red bite registration rims, shown from the front."
+      },
+      {
+        "image": "assets/uploads/work/denture-3-try-in.jpg",
+        "title": "Try-in",
+        "case": "Complete denture",
+        "alt": "Wax try-in of the complete dentures on mounted casts."
+      },
+      {
+        "image": "assets/uploads/work/denture-4-delivery.jpg",
+        "title": "Delivery",
+        "case": "Complete denture",
+        "alt": "Mouth with no teeth, above, and the same mouth with complete dentures fitted, below."
+      },
+      {
+        "image": "assets/uploads/work/denture-5-smile-before-after.jpg",
+        "title": "Complete denture: smile",
+        "case": "Complete denture",
+        "alt": "Close-up of a patient’s smile without teeth, above, and with the complete denture, below."
+      },
+      {
+        "image": "assets/uploads/work/denture-6-smile-both-sides.jpg",
+        "title": "Complete denture: both sides",
+        "case": "Complete denture",
+        "alt": "Four close-ups of a patient’s smile from the left and right, before and after the complete denture."
+      },
+      {
+        "image": "assets/uploads/work/denture-7-face-before-after.jpg",
+        "title": "Complete denture: face",
+        "case": "Complete denture",
+        "alt": "Two portraits of a patient with the eyes covered, before and after the complete denture."
+      },
+      {
+        "image": "assets/uploads/work/endocrown-1-prep.jpg",
+        "title": "Endocrown prep",
+        "case": "Endocrown",
+        "alt": "Upper molar with an old amalgam filling, above, and the same tooth after the endocrown preparation, below."
+      },
+      {
+        "image": "assets/uploads/work/endocrown-2-tooth-preparation.jpg",
+        "title": "Tooth preparation",
+        "case": "Endocrown",
+        "alt": "Molar under rubber dam: blue etching gel, above, and bonding agent being applied to the prepared tooth, below."
+      },
+      {
+        "image": "assets/uploads/work/endocrown-3-impression.jpg",
+        "title": "Impression",
+        "case": "Endocrown",
+        "alt": "Green impression material of the prepared tooth with the prepared tooth highlighted."
+      },
+      {
+        "image": "assets/uploads/work/endocrown-4-endocrown.jpg",
+        "title": "Endocrown",
+        "case": "Endocrown",
+        "alt": "Digital model of a molar with the endocrown in place."
+      },
+      {
+        "image": "assets/uploads/work/endocrown-5-surface-treatment.jpg",
+        "title": "Surface treatment",
+        "case": "Endocrown",
+        "alt": "Steps before cementing the ceramic crown: hydrofluoric acid etching for 20 seconds, then silane for 60 seconds."
+      },
+      {
+        "image": "assets/uploads/work/endocrown-6-delivery.jpg",
+        "title": "Delivery",
+        "case": "Endocrown",
+        "alt": "The finished endocrown on the model with an X-ray of the tooth."
+      },
+      {
+        "image": "assets/uploads/work/endocrown-7-before-after.jpg",
+        "title": "Before and after",
+        "case": "Endocrown",
+        "alt": "Molar with an old filling, above, and the same tooth restored with a ceramic crown, below."
+      }
+    ],
+    "placeholder_caption": "Illustration only. Real case photos will appear here.",
+    "cases": []
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "heading": "Skills and areas of experience",
+    "groups": [
+      {
+        "title": "Clinical areas",
+        "items": [
+          "Restorative dentistry",
+          "Endodontics",
+          "Periodontics",
+          "Oral surgery",
+          "Prosthodontics",
+          "Pediatric dentistry"
+        ]
+      },
+      {
+        "title": "Skills",
+        "items": [
+          "Dental photography",
+          "Communication",
+          "Teamwork and collaboration",
+          "Time management",
+          "Patient management",
+          "Attention to detail"
+        ]
+      },
+      {
+        "title": "Languages",
+        "items": [
+          "Arabic",
+          "English"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Get in touch",
+    "intro": "For opportunities, collaborations or questions about my work.",
+    "email": "Mena15mmm@gmail.com",
+    "phone": "01016003405",
+    "location": "6th of October City, Egypt",
+    "current": "Dental internship, MSA University"
+  },
+  "footer": {
+    "left": "© 2026 Menna Aboelata Salem",
+    "right": "General dentist · Dental intern"
+  }
+}
